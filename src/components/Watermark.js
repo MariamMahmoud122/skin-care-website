@@ -26,10 +26,21 @@ const WatermarkCloud = () => {
   return (
     <>
       {visible && (
-        <div className="cloud-watermark">
-          <span>this is website created by Software engineer / Mariam Soliman</span>
-        </div>
-      )}
+  <div className="cloud-watermark">
+    <div className="cloud-inner">
+      <p className="cloud-text">
+        this is website created by
+      </p>
+      <p className="cloud-author">
+        <span className="highlight">Software Engineer / Mariam Soliman</span>
+      </p>
+      <p className="cloud-email">
+        <span className="highlight">E-mail:</span> mmariam1222004@gmail.com
+      </p>
+    </div>
+  </div>
+)}
+
     </>
   );
 };

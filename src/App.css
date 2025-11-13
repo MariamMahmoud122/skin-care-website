@@ -921,41 +921,50 @@ height: auto;
     height: 40px;
     font-size: 14px;
   }
-}
-.cloud-watermark {
+}.cloud-watermark {
   position: fixed;
   bottom: 30px;
   left: -100%;
-  white-space: nowrap;
-  font-size: 16px;
-  font-weight: bold;
-  color: #fff;
-  background: rgba(0,0,0,0.6);
-  padding: 10px 20px;
-  border-radius: 20px;
   z-index: 9999;
-  animation: moveCloud 20s linear forwards; /* بطيئة أكتر */
+  animation: moveCloud 20s linear forwards;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  font-family: "Segoe UI", sans-serif;
 }
 
+.cloud-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.cloud-text {
+  font-size: 14px;
+  margin: 0;
+  opacity: 0.8;
+}
+
+.cloud-author {
+  font-size: 15px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.cloud-email {
+  font-size: 13px;
+  margin: 0;
+  opacity: 0.9;
+}
+
+
+
+/* حركة السحابة */
 @keyframes moveCloud {
-  0% {
-    left: -100%;
-    opacity: 0;
-  }
-  10% {
-    opacity: 1;
-  }
-  90% {
-    opacity: 1;
-  }
-  100% {
-    left: 100%;
-    opacity: 0;
-  }
+  0% { left: -100%; opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { left: 100%; opacity: 0; }
 }
-
-
-
-
-
-

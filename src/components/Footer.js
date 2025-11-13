@@ -24,8 +24,8 @@ const Footer = () => {
         <div className="footer-contact">
           <h3>Contact</h3>
           <p><i className="fas fa-map-marker-alt"></i> Cairo, Egypt</p>
-          <p><i className="fas fa-envelope"></i> maryooooma@brightcare.com</p>
-          <p><i className="fas fa-phone"></i> +20 111 111 111</p>
+          <p><i className="fas fa-envelope"></i> mmariam1222004@gmail.com</p>
+          <p><i className="fas fa-phone"></i> +20 11- --- -91</p>
         </div>
 
         <div className="footer-social">
